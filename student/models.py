@@ -8,6 +8,7 @@ class Student(models.Model):
     date_of_birth= models.DateField()
     code=models.PositiveSmallIntegerField()
     country=models.CharField(max_length=28)
+    teacher = models.ForeignKey()
     
     
     def __str__(self):
